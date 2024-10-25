@@ -21,7 +21,7 @@ public class AddressController {
         AddressDTO savedAddressDTO = addressService.createAddress(addressDTO);
         return new ResponseEntity<>(savedAddressDTO, HttpStatus.CREATED);
     }
-
+//this is a comment
     @GetMapping("listAll")
     // URL : http://localhost:8080/api/addresses/listAll
     public ResponseEntity<List<AddressDTO>> getAllAdresses(){
